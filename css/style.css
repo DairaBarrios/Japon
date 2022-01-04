@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  line-height: 25px;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+}
+main {
+  padding: 35px;
+  max-width: 1366px;
+  margin: 35px auto;
+  background-color: rgba(246, 246, 244, 0.972);
+}
+main > h1 {
+  color: black;
+  margin-bottom: 35px;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+/*NAV*/
+nav > ul {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 10px 20px;
+  width: auto;
+  color: white;
+}
+
+nav > ul > li > ul {
+  position: absolute;
+  top: 40px;
+  display: none;
+  background-color: rgba(250, 122, 3, 0.959);
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  padding-inline-start: 0px;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  width: auto;
+}
+
+nav > ul > li > ul > li {
+  margin: 10px;
+}
+nav > ul > li > a {
+  color: white;
+}
+nav > ul > li > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+nav li:hover > a {
+  color: black !important;
+}
+nav > ul > li > a.active {
+  background-color: rgba(247, 111, 20, 0.808);
+  padding: 15px;
+}
+
+a:active {
+  color: black;
+}
+.--blackBackground {
+  background-color: black;
+}
+.--blackBackground li:hover > a {
+  color: rgb(245 225 225 / 52%) !important;
+}
+.--blackBackground > ul > li > a.active {
+  background-color: rgba(255, 0, 0, 0.801);
+}
+
+.--blackBackground > ul > li > ul {
+  background-color: rgba(255, 0, 0, 0.801);
+}
+/*BANNER*/
+.banner {
+  background: url(../img/bannerFiltro.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  top: 50px;
+  padding-top: 150px;
+  padding-left: 35%;
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.bannerCorteSection {
+  background: url(../img/bannerMedio.jpg) no-repeat center;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.bannerCorteSection > span {
+  position: relative;
+  bottom: -450px;
+}
+
+/*TEXTO*/
+h2 {
+  margin-top: 35px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*CONTENIDO*/
+.discStyle {
+  margin: 50px 0;
+}
+.discStyle > li {
+  list-style-type: disc;
+  color: red;
+}
+.discStyle > li > span {
+  color: black;
+}
+
+div > iframe {
+  border: none;
+  margin: 5% 30%;
+}
+ul > li > iframe {
+  border: none;
+  width: 20%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.--pink-background {
+  background-color: rgb(245 225 225 / 52%);
+  padding: 20px;
+}
+
+.--text-center {
+  text-align: center;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+ul > li > iframe {
+  width: auto;
+}
+ol {
+  padding-top: 10px;
+}
+
+ol > li > h3 {
+  padding: 5px 0;
+  border-bottom: 1px solid red;
+  margin-bottom: 30px;
+}
+
+.itinerario {
+  padding-left: 0px;
+}
+
+.itinerario > li > h4 {
+  text-align: center;
+}
+.itinerario > li > ul {
+  text-align: center;
+}
+.itinerario > li > ul {
+  padding: 0;
+}
+
+.itinerario > li {
+  margin: 20px;
+}
+.datosCuriosos > li {
+  margin: 50px 0;
+}
+
+article {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: auto;
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+.formulario > p {
+  text-align: center;
+}
+.opcionesFormulario > p {
+  margin: 10px 0;
+}
+.opcionesFormulario > p > span {
+  font-weight: bold;
+}
+article > * {
+  margin: 10px;
+}
+
+article > a {
+  background-color: red;
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 25px 10px;
+  color: white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+  height: 413px;
+  width: 100%;
+  background-size: cover;
+}
+
+footer section > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.redes > li > a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  padding: 20px;
+  text-indent: -10000px;
+}
+a[href*="facebook"] {
+  background: url("../img/icon/sprites.png") no-repeat center center;
+  background-position: -5px -5px;
+}
+a[href*="reddit"] {
+  background: url("../img/icon/sprites.png") no-repeat center center;
+  background-position: -47px -5px;
+}
+a[href*="twitter"] {
+  background: url("../img/icon/sprites.png") no-repeat center center;
+  background-position: -5px -47px;
+}
+
+/*Formulario*/
+form > * {
+  margin: 20px;
+}
+.centerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.centerForm > label {
+  width: 30%;
+  font-weight: bold;
+}
+
+.centerForm > input {
+  width: 30%;
+}
+.column > label {
+  font-weight: bold;
+}
+form div input,
+form div label,
+form div textarea {
+  display: inline-block;
+}
+textarea {
+  resize: none;
+  width: 200px;
+  height: 200px;
+}
+
+form div label {
+  vertical-align: top;
+}
+
+input[type="text"] {
+  height: 30px;
+  margin-left: 20px;
+}
+input[type="email"] {
+  margin-left: 20px;
+}
+input[type="date"] {
+  margin-left: 20px;
+}
+
+.--backgroundLetter {
+  background-color: rgba(237, 235, 223, 0.691);
+}
+
+.form {
+  padding: 30px;
+}

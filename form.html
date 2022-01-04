@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale= 1,
+    minimun- scale=1"
+    />
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <!--Style-->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario | Japón</title>
+  </head>
+  <body>
+    <header>
+      <nav class="--blackBackground">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+            <ul>
+              <li><a href="./index.html#porQue">¿Por qué Japón?</a></li>
+              <li><a href="./index.html#cultura">Cultura</a></li>
+              <li><a href="./index.html#comida">Comida tipica</a></li>
+              <li><a href="./index.html#saber">¿Qué tenes que saber?</a></li>
+              <li><a href="./index.html#curiosidad">Curiosidades</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./itinerario.html">Itinerario</a>
+            <ul>
+              <li lang="ja"><a href="./itinerario.html#kioto">Kyōto</a></li>
+              <li lang="ja"><a href="./itinerario.html#osaka">Ōsaka</a></li>
+              <li lang="ja">
+                <a href="./itinerario.html#sapporo">Sapporo</a>
+              </li>
+              <li lang="ja">
+                <a href="./itinerario.html#okinawa">Okinawa</a>
+              </li>
+              <li lang="ja">
+                <a href="./itinerario.html#hiroshima">Hiroshima</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./noticias.html">Noticias</a>
+            <ul>
+              <li><a href="./noticias.html#fesivales">Festivales</a></li>
+              <li><a href="./noticias.html#onsen">Onsen</a></li>
+              <li><a href="./noticias.html#podcast">Podcast</a></li>
+              <li><a href="./noticias.html#noticias">Noticias</a></li>
+            </ul>
+          </li>
+          <li><a href="./form.html" class="active">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="formulario">
+      <h1>Contacte con nosotros</h1>
+
+      <p>
+        Si te queda alguna duda o necesitas más información sobre qué hacer en
+        Japón, no dudes en contactarnos!
+      </p>
+      <p>
+        Dejanos tus datos y te vamos a estar respondiendo lo mas pronto posible.
+      </p>
+
+      <div class="row --backgroundLetter">
+        <div class="column">
+          <img
+            src="./img/form.jpg"
+            alt="postal de un templo budista"
+            width="600"
+            height="879"
+          />
+        </div>
+        <div class="column form">
+          <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="centerForm">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                required="required"
+              />
+            </div>
+            <div class="centerForm">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required="required"
+              />
+            </div>
+            <div class="centerForm">
+              <label for="date">Periodo de tu viaje</label>
+              <input
+                id="date"
+                type="date"
+                name="date"
+                min="1880-01-01"
+                max="2022-12-01"
+              />
+            </div>
+
+            <div class="opcionesFormulario">
+              <p>
+                <span
+                  >Elegi la ciudad de la que deseas recibir mas información </span
+                >(podes elegir mas de una opcion).
+              </p>
+
+              <div>
+                <label for="kioto" lang="ja">Kyōto</label>
+                <input type="checkbox" name="kioto" id="kioto" />
+              </div>
+
+              <div>
+                <label for="osaka" lang="ja">Ōsaka</label>
+                <input type="checkbox" name="osaka" id="osaka" />
+              </div>
+
+              <div>
+                <label for="sapporo" lang="ja">Saporro</label>
+                <input type="checkbox" name="sapporo" id="sapporo" />
+              </div>
+
+              <div>
+                <label for="okinawa" lang="ja">Okinawa</label>
+                <input type="checkbox" name="okinawa" id="okinawa" />
+              </div>
+
+              <div>
+                <label for="hiroshima" lang="ja">Hiroshima</label>
+                <input type="checkbox" name="hiroshima" id="hiroshima" />
+              </div>
+            </div>
+
+            <div class="column">
+              <label for="comentario">Dejanos tu comentario</label>
+              <textarea
+                name="comentario"
+                id="comentario"
+                placeholder="Comentario"
+                cols="30"
+                rows="10"
+                required="required"
+              ></textarea>
+            </div>
+            <div class="--text-center">
+              <label for="checkbox"
+                >¿Querés suscribirte a nuetsro newsletter?</label
+              >
+              <input
+                id="checkbox"
+                type="checkbox"
+                name="newsletter"
+                value="suscripto"
+                checked
+              />
+            </div>
+            <div class="--text-center">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Restablecer" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <section class="column">
+          <h2>La informacion se obtuvo de:</h2>
+          <ul>
+            <li>
+              <a
+                href="https://japonismo.com/blog/8-razones-viajar-japon-en-primavera"
+                target="_blank"
+                >Japonismo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.elespanol.com/cocinillas/reportajes-gastronomicos/20200217/tipos-comida-japonesa-platos-imprescindibles-probar-japon/466953591_0.html"
+                target="_blank"
+                >El Español</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.mundo-nomada.com/blog/curiosidades-sobre-japon-20-cosas-que-quizas-no-sabias"
+                target="_blank"
+                >Mundo-nomada</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://es.wikipedia.org/wiki/Jap%C3%B3n#:~:text=Jap%C3%B3n%20(en%20japon%C3%A9s%2C%20%E6%97%A5%E6%9C%AC%2C,el%20noroeste%20del%20oc%C3%A9ano%20Pac%C3%ADfico.&text=Jap%C3%B3n%20es%20el%20und%C3%A9cimo%20pa%C3%ADs,m%C3%A1s%20densamente%20poblados%20y%20urbanizados."
+                target="_blank"
+                >wikipedia</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="column">
+          <h2>Redes Sociales:</h2>
+
+          <ul class="redes">
+            <li>
+              <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="row">
+        <div class="column --text-center">
+          <ul>
+            <li>Alumno: Barrios Daira</li>
+            <li>Profesora: Iglesias Pamela</li>
+            <li>2021 - DaVinci - Maquetado y Desarrollo Web - DWN1B</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
